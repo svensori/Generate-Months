@@ -44,7 +44,11 @@
 		//if month selected with half month
 		if($duration_d > 10 && $duration_d < 20){
 			list($lastD1, $lastD2) = explode(" - ", end($dates));
-			$strD1 = date($format, strtotime("-".$duration_d." DAY", $d2));
+			if($duration_d < 15){
+				$strD1 = date($format, strtotime("+1 DAY", strtotime($lastD2)));
+			}else{
+				$strD1 = date($format, strtotime("-".$duration_d." DAY", $d2));
+			}
 			$strD2 = date($format, $d2);
 			array_push($dates, $strD1." - ".$strD2." (half month)");
 		}
