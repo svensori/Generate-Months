@@ -1,8 +1,20 @@
 <?php
-	/*
-	//CUTOFF GENERATOR BY steven soriano
-	//Produce months between selected date
-	*/
+	/**
+	 * Cut-off generation. Compute months between selected date
+	 *
+	 * PHP version 5
+	 *
+	 * LICENSE: This source file is subject to version 3.01 of the PHP license
+	 * that is available through the world-wide-web at the following URI:
+	 * http://www.php.net/license/3_01.txt.  If you did not receive a copy of
+	 * the PHP License and are unable to obtain it through the web, please
+	 * send a note to license@php.net so we can mail you a copy immediately.
+	 *
+	 * dated.php
+	 *
+	 * @author     Steven Soriano
+	 * @copyright  2018 Steven Soriano
+	 */
 	
 	$d1 = strtotime("jan 1 2018");
 	$d2 = strtotime("jan 31 2019");
